@@ -8,6 +8,7 @@ class TestTrigonometricFunctions(unittest.TestCase):
         self.assertAlmostEqual(calculate_sinus(0), 0)
         self.assertAlmostEqual(calculate_sinus(np.pi / 2), 1)
         self.assertAlmostEqual(calculate_sinus(np.pi), 0)
+        self.assertAlmostEqual(calculate_sinus(np.pi / 4), 0)
         self.assertAlmostEqual(calculate_sinus(3 * np.pi / 2), -1)
 
     def test_calculate_cosine(self):
